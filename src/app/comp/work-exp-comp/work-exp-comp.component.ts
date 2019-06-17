@@ -9,8 +9,12 @@ import { Product } from "../../model/product.class";
 
 export class WorkExpCompComponent implements OnInit {
   workExp:string = 'Nomadic Lifestyle Work Experience';
-  display: boolean = true;
+  hide: boolean = true;
   products: Product[] = [];
+
+  logIt(){
+    console.log("big log excreted");
+  }
 
   constructor() { }
 
@@ -24,5 +28,5 @@ export class WorkExpCompComponent implements OnInit {
     let p5: Product = new Product(5, "burps09", "big burps", 834.80);
     this.products.push(p1,p2,p3,p4,p5);
   }
-  
+
 }
