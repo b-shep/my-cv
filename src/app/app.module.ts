@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { WorkExpCompComponent } from './comp/work-exp-comp/work-exp-comp.component';
 import { EducationComponent } from './comp/education/education.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     WorkExpCompComponent,
-    EducationComponent
+    EducationComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,3 +5,18 @@
 <h3 *ngIf ='display == true'>
   big changes disp
 </h3>
+
+<table>
+  <tr>
+      <td>ID</td>
+      <td>Code</td>
+      <td>Description</td>
+      <td>Price</td>
+  </tr>
+  <tr *ngFor="let Product of products">
+    <td>{{Product.id}}</td>
+    <td>{{Product.code}}</td>
+    <td>{{Product.description}}</td>
+    <td>{{Product.price}}</td>
+  </tr>
+</table>
